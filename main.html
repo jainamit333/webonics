@@ -8,21 +8,50 @@
 -->
 <html>
   <head>
-    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- <script type="text/javascript" src="background.js"></script> -->
   </head>
-  <body class="main-div">
-  	<div class="nav-bar">
-  		<h3>Webonics</h3>
+  <body class="main-div ">
+  	<div class="nav-bar row">
+  		<span class="col xs-col-11">Webonics</span>
+      <span class="glyphicon glyphicon-search align-right col xs-col-1 setting" aria-hidden="true"></span>
   	</div>
+
   	<div class="meta-data">
-  		
+
+      <button class="btn btn-success btn-sm" type="button">
+Upvote <span class="badge">4</span>
+</button>
+<button class="btn btn-danger btn-sm" type="button">
+Downvote <span class="badge">4</span>
+</button>
+<div class="tag-holder row">
+  <span class="tag"> programming </span>
+  <span class="tag"> web </span><span class="tag"> study </span>
+  <span class="tag"> google </span>
+  <span class="tag"> long </span><span class="tag"> archived </span>
+</div>
   	</div>
   	<div class="user-data">
-  		
+
   	</div>
   	<div class="user-login">
-  		
+
+          <div class="input-group row">
+
+            <input class="form-control"  type="text" placeholder="email id"/>
+            </div>
+          <div class="input-group row">
+            <input type="password" class="form-control" placeholder="password"/>
+          </div >
+          <div class="row">
+              <span class="btn btn-sm btn-success">LOGIN</span>
+              <span class="btn btn-sm btn-primary">SIGN UP</span>
+          </div>
   	</div>
   </body>
 </html>

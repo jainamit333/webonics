@@ -1,4 +1,5 @@
 {
+  "key":"mkjmnkegjnmgcokaccikagnogghljefi",
   "name": "Webonics:-know Internet Better",
   "version": "1.0.2",
   "icons": {
@@ -12,7 +13,13 @@
     "default_popup": "main.html"
   },
   "permissions": [
-     "identity"
+     "identity","tabs"
   ],
-  "manifest_version":2
+  "manifest_version":2,
+    "oauth2": {
+        "client_id": "722550129793-gtp57n2da2cbu6ba5bnqikva4ji8qpj6.apps.googleusercontent.com",
+        "scopes": [
+            "https://www.googleapis.com/auth/userinfo.email"
+        ]   
+    }  
 }
