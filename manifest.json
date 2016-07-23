@@ -16,7 +16,7 @@
     "scripts": ["background.js"]
   },
   "permissions": [
-     "identity","tabs","identity.email","storage" 
+     "identity","tabs","identity.email","storage" ,"http://localhost:8181/api/*"
   ],
   "manifest_version":2,
     "oauth2": {

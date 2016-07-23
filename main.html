@@ -1,46 +1,41 @@
-<!DOCTYPE html>
-<!--
- * Copyright (c) 2010 The Chromium Authors. All rights reserved.  Use of this
- * source code is governed by a BSD-style license that can be found in the
- * LICENSE file.
- *
- * Author: Eric Bidelman <ericbidelman@chromium.org>
--->
-<html>
-  <head>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
- 
- 
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <!-- <script type="text/javascript" src="background.js"></script> -->
-     <script type="text/javascript" src="lib/jquery.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-  </head>
-  <body class="main-div">
-  	<div class="nav-bar row  user-login" id="test-me">
-  		<span class="col xs-col-11">Webster</span>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <!-- <script type="text/javascript" src="background.js"></script> -->
+      <script type="text/javascript" src="lib/jquery.js"></script>
+      <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body class="main-div">
+    <div id="is_logined">
+     <div class="nav-bar row  user-login" id="test-me">
+      <span class="col xs-col-11">Webster</span>
       <div class="glyphicon glyphicon-th-list align-right col xs-col-1 setting" aria-hidden="true"></div>
-  	</div>
+    </div>
 
-  	<div class="meta-data row">
-  		<img src="likeme.png" class="like-action" id="red-heart">
-  		<img src="unlikeme.png" class="like-action" id="grey-heart">
-      	<button class="btn btn-success btn-sm" type="button">
-			Upvotes <span class="badge" id="like-count"></span>
-		</button>
-<div class="tag-holder " id="tag-holder-div">
-  
-</div>
-  	</div>
-  	<div class="user-data user-login">
-  		<div class="form-group">
-		  <input type="text" class="form-control" id="tag-input" placeholder="add tags">
-		</div>
+    <div class="meta-data row">
+      <img src="likeme.png" class="like-action" id="red-heart"/>
+      <img src="unlikeme.png" class="like-action" id="grey-heart"/>
+      <button class="btn btn-success btn-sm" type="button">
+       Upvotes <span class="badge" id="like-count"></span>
+     </button>
+   </div>
+   <div class="tag-holder " id="tag-holder-div"></div>
 
-		<div class="form-group">
-			<textarea rows="3" placeholder="notes..." id="note-textarea"></textarea>
-		</div>
-  	</div>
-  	</div>
+   <div class="user-data user-login">
+    <div class="form-group">
+      <input type="text" class="form-control" id="tag-input" placeholder="add tags">
+    </div>
+    <div class="form-group">
+     <textarea rows="3" placeholder="notes..." id="note-textarea"></textarea>
+   </div>
+  </div>
+  </div>
+  <div id="is_not_logined">
+    <div class="alert alert-danger" role="alert">You are Logined with a Google Account.</div>
+    <div class="sm btn btn-sm btn-success" id="login">login</div>
+
+  </div>
   </body>
-</html>
+  </html>
