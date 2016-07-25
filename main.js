@@ -8,7 +8,7 @@
 	var notes = "";
 	var tabObjct=null;
 
-	chrome.tabs.getCurrent(null, function(tab) {  
+	chrome.tabs.getCurrent( function(tab) {  
 		tabObjct = tab;
 	});
 
